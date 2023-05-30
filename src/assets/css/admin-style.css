@@ -1,0 +1,15 @@
+.side-menu-bouton{
+cursor: pointer;
+
+}
+
+
+
+.side-menu-bouton:hover {
+   background-color: rgb(162, 150, 150);
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
