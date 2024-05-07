@@ -1,0 +1,62 @@
+.btn-rapport , .btn-rapport:hover {
+    font-size: 15px;
+    background-color: #2eca6a;
+    color: white;
+    font-weight: 500;
+}
+
+.top-card strong{
+    font-size: 30px;
+    font-weight: 600;
+}
+.top-card i{
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.202);
+}
+
+.card-attente{
+    border-left: 0.25rem solid rgb(222, 16, 16) !important ;
+}
+
+.card-attente span{
+    font-size: 14px;
+    color: rgb(222, 16, 16);
+    font-weight: 600;
+}
+
+
+.card-prestataires{
+    border-left: 0.25rem solid #2eca6a !important ;
+}
+
+.card-prestataires span{
+    font-size: 14px;
+    color: #2eca6a;
+    font-weight: 600;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+/*--------------------------------------------------------------
+# validInscription
+--------------------------------------------------------------*/
+.label{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.662);
+}
+.value{
+    font-size: 15px;
+
+}
+.commentaire-title span{
+    font-size: 20px;
+}
+.commentaire-title i{
+    font-size: 20px;
+    font-weight: 800;
+}

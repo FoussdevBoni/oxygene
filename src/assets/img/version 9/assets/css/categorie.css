@@ -1,0 +1,46 @@
+
+/*------/ Intro Single /------*/
+.intro-single {
+    padding: 6rem 0 3rem;
+  }
+  
+  @media (max-width: 767px) {
+    .intro-single {
+      padding-top: 4rem;
+    }
+  }
+  
+  .intro-single .title-single-box {
+    padding: 1rem 0 1rem 2rem;
+  }
+  
+  .intro-single .title-single-box {
+    border-left: 3px solid #2eca6a;
+  }
+  
+  .intro-single .title-single-box .title-single {
+    font-weight: 600;
+    font-size: 19px;
+  }
+  
+  @media (min-width: 768px) {
+    .intro-single .title-single-box .title-single {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .intro-single .title-single-box .title-single {
+      font-size: 20px;
+    }
+  }
+  
+  .intro-single .breadcrumb-box {
+    padding: 1rem 0 0 0.5rem;
+  }
+  
+  .intro-single .breadcrumb {
+    background-color: transparent;
+    padding-right: 0;
+    padding-left: 0;
+  }

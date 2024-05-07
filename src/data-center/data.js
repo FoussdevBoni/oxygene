@@ -1,12 +1,12 @@
-import image1 from '../assets/img/oxy1.png'
-import image2 from '../assets/img/oxy2.png'
-import image3 from '../assets/img/oxy3.png'
-
+import image1 from '../assets/img/images-banniere/image (1).jpeg'
+import image2 from '../assets/img/images-banniere/image (2).jpeg'
+import image3 from '../assets/img/images-banniere/image (3).jpeg'
+import oxylogo from '../assets/img/logos/logo1.jpeg'
 import aboutImg1 from '../assets/img/about-image1.jpg'
 import aboutImg2 from '../assets/img/about-image2.png'
 import aboutImg3 from '../assets/img/about-image3.jpg'
 import aboutImg from '../assets/img/about-image.jpg'
-
+import favicon from '../assets/img/logos/logo.jpeg'
 import logo1 from '../assets/img/home-task-removebg-preview.png'
 import logo2 from '../assets/img/medico-task-removebg-preview.png'
 import logo3 from '../assets/img/urgence-task-removebg-preview.png'
@@ -16,6 +16,8 @@ export const aboutImage = {
   img2: aboutImg2,
   img3: aboutImg3
 }
+export const logo  = oxylogo
+export const logoFavicon = favicon
 export const service_logo = {
   logo1: logo1,
   logo2: logo2, 
@@ -98,7 +100,7 @@ export const services = [
   {
       logo: logo3,
 
-    category: 'Services d\'achat d\'urgence',
+    category: 'Achats urgents',
     services: [
       "Courses d'urgence",
       "Pharmacie à domicile",
@@ -123,3 +125,21 @@ export const services = [
     ]
   },
 ];
+
+
+export const isMobile = window.innerWidth < 400;
+export const isDesktop = window.innerWidth >= 1200;
+ export const isTablet = window.innerWidth >= 800 && window.innerWidth < 1200;
+export const companyDefaulLogo = 'https://img.freepik.com/vecteurs-libre/modele-conception-logo-immobilier-panier-vente-maison-silhouette-logotype-concept_126523-634.jpg'
+
+export const userProfile =  `
+https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png
+`
+
+ export const productNbr = (productNbr)=>{
+      if (productNbr!==undefined) {
+        return productNbr
+      }else {
+        return 0
+      }
+    }

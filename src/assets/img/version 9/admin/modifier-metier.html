@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Acceuil</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <?php include 'link_vendor.php'; ?>
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/realisation.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="guide aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="commentaire-title p-3 text-center">
+                <a href="gestion-metiers.html" class="text-white"><i class="bi bi-arrow-left pl-5 p-5"></i></a>
+                <span class="h7">Modification d'un métier</span>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 m-3">
+                    <div class="text-center ">
+                        <a href="../assets/img/pièce.jpg "><img class="border p-2" width="170"
+                                src="../assets/img/pièce.jpg" alt=""></a>
+                        <span class="h3"><strong>109</strong> </span>
+                    </div>
+                    <form action="">
+                        <div class="row justify-content-between mt-3 mx-4">
+                            <div class="col-auto label ">Nom du métier</div>
+                            <div class="col text-end col-lg-9 value">
+                                <input type="text" name="name" class="form-control" value="Menuisier" required
+                                    placeholder="Nom du métier" id="name">
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mx-4 mt-3">
+                            <div class="col-auto label label ">Description</div>
+                            <div class="col col-lg-9 text-end value">
+                                <textarea name="description" id="description" required maxlength="250" minlength="50"
+                                    class="form-control" style="height: 100px"
+                                    placeholder="Une breve description du metier">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, saepe?
+                            </textarea>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mx-4 mt-3">
+                            <div class="col-auto label label ">Catégorie</div>
+                            <div class="col col-lg-9 text-end value">
+                                <select class="form-select" name="category" id="category"
+                                    aria-label="Default select example">
+                                    <option selected="" value="Autres">Autres</option>
+                                    <option value="Agriculture et Agroalimentaire">Agriculture et Agroalimentaire
+                                    </option>
+                                    <option value="Mines et Construction">Mines et Construction </option>
+                                    <option value="Métaux et électromécanique">Métaux et électromécanique</option>
+                                    <option value="Bois et mobiler">Bois et mobiler</option>
+                                    <option value="Communication audiovisuel">Communication audiovisuel</option>
+                                    <option value="Hygiène et soins">Hygiène et soins</option>
+                                    <option value="Art et décoration">Art et décoration</option>
+                                    <option value="Transport et logistique">Transport et logistique</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Cérémonie et divertissement">Cérémonie et divertissement</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mx-4 mt-3">
+                            <div class="col-auto label label ">Modifier l'image</div>
+                            <div class="col col-lg-9 value">
+                                <input class="form-control" type="file" value="../assets/img/pièce.jpg" name="image"
+                                    id="image">
+                            </div>
+                        </div>
+                        <div class="text-end mt-2">
+                            <button type="submit" class=" col-auto btn btn-success mx-2 my-2 px-4">Mettre à
+                                jour</button>
+                        </div>
+                        
+                    </form>
+                    <div class="row justify-space-between">
+                        <button class="col-auto btn btn-secondary mx-5 my-2 align-middle" data-bs-toggle="modal"
+                            data-bs-target="#Ignorer1 ">Ignorer</button>
+                        <div class="modal fade border-danger" id="Ignorer1" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Ignorer !!</h5>
+                                        <span data-bs-dismiss="modal" class="right-boxed bi bi-x ml-5 croix"></span>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Vous voulez Ignorer la Modification ?</p>
+                                        <div class="text-end">
+                                            <a data-bs-dismiss="modal" href="" class="btn btn-outline-secondary">
+                                                Non</a>
+                                            <a href="gestion-metiers.html" class="btn btn-outline-secondary">
+                                                Oui</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button data-bs-toggle="modal" data-bs-target="#Supprimer"
+                            class="col-auto btn btn-danger mx-5 my-2 align-middle">Supprimer</button>
+                        <div class="modal fade border-danger" id="Supprimer" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-danger">Supprimer !!</h5>
+                                        <span data-bs-dismiss="modal" class="right-boxed bi bi-x ml-5 croix"></span>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="">Vous voulez vraiment supprimer le métier "Menuiserie" ?</p>
+                                        <div class="text-end">
+                                            <a data-bs-dismiss="modal" href="" class="btn btn-secondary">
+                                                Annuler</a>
+                                            <button class="btn btn-danger">
+                                                Confirmer</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        </div>
+    </main>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/chart.js/chart.min.js"></script>
+    <script src="../assets/vendor/echarts/echarts.min.js"></script>
+    <script src="../assets/vendor/quill/quill.min.js"></script>
+    <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../mon_compte/js/main.js"></script>
+
+</body>
+
+</html>

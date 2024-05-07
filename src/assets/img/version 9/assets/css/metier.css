@@ -1,0 +1,32 @@
+.cta1{
+  
+  background-size: cover;
+  padding: 100px 0;
+  padding-bottom: 20px;
+}
+.cta1 h3 {
+  color: #fff ;
+  letter-spacing: 3px;
+  font-size: 27px;
+  font-weight: 700;
+}
+.cta1 h7 {
+  color: #2eca6a;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.cta1 p {
+  color: rgba(255, 255, 255, 0.868);
+
+}
+
+.cta1 option{
+  background-color: white;
+  color:black ;
+  padding-top: 10px;
+}
+
+.breadcrumb{
+  font-weight: 600;
+}
+

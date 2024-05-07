@@ -1,0 +1,73 @@
+.detail-realisation {
+    background-color: white;
+}
+.detail-realisation .description{
+    font-size: 16px;
+}
+.detail-realisation .avis{
+    font-weight: 600;
+}
+
+.detail-realisation .image{
+    text-align: center;
+}
+.detail-realisation .contact{
+    text-align: end;
+}
+.detail-realisation .contact a{ 
+    background-color: #2eca6a;
+    color: #fff;
+    font-weight: 600;
+}
+  .guide{
+    background-color: rgb(247, 248, 247);
+    color: black;
+    border: 5px ;
+}
+  .guide p{
+    background-color: rgb(247, 248, 247);
+    font-weight: normal;
+    border: 5px ;
+}
+
+  .guide small{
+    color: black;
+    font-weight: normal;
+}
+  .guide .commentaire-title{
+    background-color: #03441bf5;
+    color: #fff;
+}
+  .guide .commentaire-title h3{
+    color: #fff;
+}
+  .guide .positifs{
+    font-weight: 800;
+}
+  .guide .positifs h5{
+    color: rgba(255, 255, 255, 0.792);
+    font-weight: 600;
+}
+
+  .guide .pouce {
+    color: rgba(255, 255, 255, 0.792);
+    font-weight: 600;
+}
+  .guide .positifs span{
+    font-size: 17px;
+}
+  .guide i{
+    font-size: 18px;
+}
+.detail-realisation .icone{
+    display: inline;
+}
+
+
+.commentaire p{
+    font-weight: 400;
+    font-size: small;
+}
+.commentaire p span{
+    font-weight: 100;
+}

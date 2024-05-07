@@ -10,7 +10,25 @@ export const MyProvider = (props) => {
     const [myVariable, setMyVariable] = React.useState({
         isPresta: true,
         liens: [],
-        connected: false        
+        connectedAS: '',
+        route: 'Salut !',
+        registered: false,
+        demandeur: null,
+        selected: null,
+        openMobile: false, 
+        hiddenDrawer: false, 
+        open: false,
+        hidden: false,
+        openForm: false , 
+        achatSelected: null,
+        companySelected: null, 
+        demandeSelected: null , 
+        chatSelected: null,
+        commandeSelected: null,
+        productSelected: null,
+        productSelectedB: null ,
+        activeMenuIndex: 0,
+        
     });
     return (
       <MyContext.Provider value={{ myVariable, setMyVariable }}>

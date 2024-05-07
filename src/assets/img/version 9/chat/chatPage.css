@@ -1,0 +1,36 @@
+
+.content{
+    height: 450px;
+    overflow-y: scroll ;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-weight: 500;
+        
+}
+.ok{
+    background-color: rgb(247, 248, 247);
+}
+.message-send{
+    margin-left: 30%;
+    
+}
+.message-send div, .message-receive div{
+    border-radius: 30px;
+}
+
+.message-receive div{
+    background-color: #fff;
+}
+
+.message-send div{
+    background-color: #2eca6a;
+    color: white;
+    margin-right: 5%;
+
+
+}
+
+.message-receive{
+    margin-right: 30%;
+}
+

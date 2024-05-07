@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>register</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+        <link href="assets/img/logo-presta2.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet">
+
+                      <!-- Vendor CSS Files -->
+        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
+        <!-- Template Main CSS File -->
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <main>
+            <div class="container">
+
+                <section
+                    class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                                <div class="d-flex justify-content-center py-4">
+                                    <a href="../index.php" class="logo d-flex align-items-center w-auto">
+                                        <img src="assets/img/logo.png" alt="">
+                                        <a class="d-none d-lg-block"
+                                            style=" color:#2eca6a;font-size: 2rem; font-weight: 600;"
+                                            href="index.php">Presta</a>
+                                    </a>
+                                </div><!-- End Logo -->
+
+
+                                <div class="card mb-3">
+
+                                    <div class="card-body">
+
+                                        <div class="pt-4 pb-2">
+                                            <h5 class="card-title text-center pb-0 fs-4">Créer un compte</h5>
+                                            <p class="text-center small">Entrez vos informations personnelles pour créer
+                                                un compte</p>
+                                        </div>
+
+                                        <form class="row g-3 needs-validation" action="backRegister/register.php"
+                                            method="POST" enctype="multipart/form-data">
+
+                                            <div class="col-12">
+                                                <label for="nom" class="form-label"><b> Nom </b></label>
+                                                <input type="text" name="nom" class="form-control" id="nom">
+                                                <div id="error-nom" class="text-danger hidden small"></div>
+
+                                            </div>
+
+                                            <div class="col-12" id="monprenom">
+                                                <label for="prenom" class="form-label"><b>Prénoms</b></label>
+                                                <div class="input-group has-validation">
+                                                    <input type="text" name="prenom" class="form-control" id="prenom">
+                                                </div>
+                                                <div id="error-prenom" class="text-danger hidden small"></div>
+
+                                            </div>
+
+                                            <div class="col-12" id="monContact">
+                                                <label for="contact" class="form-label"><b>Numéro téléphone
+                                                        :</b></label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text" id="inputGroupPrepend">+229</span>
+                                                    <input type="text" name="contact" class="form-control" id="contact">
+                                                </div>
+                                                <div id="error-contact" class="text-danger hidden small"></div>
+
+                                            </div>
+
+
+                                            <!-- Modal Collapsed-->
+                                            <div id="sidebar-nav">
+                                                <button type="button" class="btn btn-warning col-7 collapsed mb-3"
+                                                    data-bs-target="#residence" data-bs-toggle="collapse">
+                                                    <b>Votre Résidence</b>
+                                                </button>
+                                                <div id="residence" class="nav-content collapse"
+                                                    data-bs-parent="#sidebar-nav">
+
+                                                    <div class="col-12 mb-2">
+                                                        <select class="form-select " name="departement" id="first-list" >
+                                                            <option value="">Département</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <select class="form-select " name="commune" id="second-list" >
+                                                            <option value="">Commune</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <select class="form-select " name="arrondissement"
+                                                            id="third-list">
+                                                            <option value="">Arrondissement</option>
+                                                        </select>
+                                                    </div>
+
+
+                                                </div>
+                                                <div id="error-residence" class="text-danger hidden small"></div>
+
+                                            </div>
+
+                                            <div class="col-12 form-group">
+                                                <label for="password" class="form-label"><b>Mot de passe :</b></label>
+                                                <input type="password" name="mp" class="form-control" id="password">
+                                                <div id="error-message" class="text-danger hidden small"></div>
+
+                                            </div>
+
+                                            <div class="col-12 form-group" id="confirm">
+                                                <label for="mpconfirm" class="form-label"><b>Confirmez le mot de passe
+                                                        :</b></label>
+                                                <input type="password" name="mpConfirm" class="form-control"
+                                                    id="mpConfirm">
+                                                <div id="error-confirm" class="text-danger hidden small"></div>
+
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="terms" type="checkbox"
+                                                        value="" id="acceptTerms">
+                                                    <label class="form-check-label" for="acceptTerms"><b>J'accepte
+                                                            les</b> <a style="color: #2eca6a;" href="#">termes et
+                                                            conditions</a></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-success w-100"
+                                                    style="background-color: #2eca6a; color: white;"
+                                                    type="submit">S'inscrire</button>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class=" mb-0">Vous avez déjà un compte ? <a style="color: #2eca6a;"
+                                                        href="pages-login.php">Se connecter</a>
+                                                </p>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main><!-- End #main -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Template Main JS File -->
+        <script src="js/main.js"></script>
+        <script src="js/require.js"></script>
+        <script src="js/adresse.js"></script>
+    </body>
+
+</html>
